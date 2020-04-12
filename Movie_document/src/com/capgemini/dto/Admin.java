@@ -1,4 +1,4 @@
-package javafiles;
+package com.capgemini.dto;
 
 public class Admin {
 	private Integer userId;

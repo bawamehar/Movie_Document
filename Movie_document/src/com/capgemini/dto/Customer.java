@@ -1,4 +1,4 @@
-package javafiles;
+package com.capgemini.dto;
 
 import java.awt.List;
 import java.time.LocalDate;
@@ -19,10 +19,6 @@ public class Customer {
 		this.customerContact = customerContact;
 		this.dateOfBirth = dateOfBirth;
 		this.myTicket = myTicket;
-	}
-
-
-	public Customer() {
 	}
 	
 	
@@ -69,27 +65,6 @@ public class Customer {
 		return "Customer [userId=" + userId + ", customerName=" + customerName + ", password=" + password
 				+ ", customerContact=" + customerContact + ", dateOfBirth=" + dateOfBirth + "]";
 	}
-	
-	public boolean bookMovieTicket(Theater theater) {
-		return false;
-	}
-	
-	public boolean cancelMovieTicket(Ticket ticket) {
-		 return false;
-	}
-	
-	public boolean chooseCity(String city) {
-		return false;
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	
