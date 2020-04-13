@@ -15,7 +15,7 @@ public class AdminServiceImpl implements AdminService{
 	boolean result;
 	private Movie  movies;
 	TheaterDaoImpl tdl = new TheaterDaoImpl(); 
-	
+	private Theater theater;
 	
 	
 	public AdminServiceImpl() {
@@ -23,7 +23,7 @@ public class AdminServiceImpl implements AdminService{
 	}
 
 	@Override
-	public void addTheater(Theater theater) {
+	public void addTheater() {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter theater city ");
 		String theaterCity = sc.next();
@@ -31,6 +31,7 @@ public class AdminServiceImpl implements AdminService{
 		String theaterName = sc.next();
 		Theater tt = new Theater(theaterName,theaterCity);
 		theater=tdl.addTheater(tt);
+		
 		if(theater!=null) 
 			System.out.println("Theater Added");
 		else 

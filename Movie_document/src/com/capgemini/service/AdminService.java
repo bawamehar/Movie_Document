@@ -7,7 +7,7 @@ import com.capgemini.dto.Theater;
 
 public interface AdminService {
 
-	public void addTheater(Theater theater);
+	public void addTheater();
 	public Boolean deleteTheater(Integer theaterId);
 	public Movie addMovie(Movie movie);
 	public Boolean deleteMovie(Integer movieId);
